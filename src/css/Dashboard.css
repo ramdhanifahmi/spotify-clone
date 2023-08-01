@@ -1,0 +1,115 @@
+/* Dashboard.css */
+.dashboard-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.search-bar {
+    padding: 20px;
+    width: 20vw;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #ccc;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 10px;
+    flex: 1;
+    padding: 5px;
+}
+
+.search-results {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.search-results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Make all cells in the table have the same width */
+.table td,
+.table th {
+    text-align: left; /* Center the content inside cells */
+    white-space: nowrap; /* Prevent text wrapping inside cells */
+    overflow: hidden; /* Hide overflowing text (use tooltip if needed) */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowing text */
+}
+
+/* Set specific width for individual columns */
+/* Adjust the width values as needed for each column */
+.table td:nth-child(1),
+.table th:nth-child(1) {
+}
+
+.table td:nth-child(2),
+.table th:nth-child(2) {
+    width: 85%; /* Adjust the width for the second column */
+}
+
+.table td:nth-child(3),
+.table th:nth-child(3) {
+    width: 5%;
+    text-align: right; /* Center the content inside cells */
+
+}
+
+.search-results td {
+    padding: 10px;
+    color: #fff;
+    border: none;
+}
+
+.search-results tr {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-results img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    flex: 1;
+}
+
+.artist {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+    flex: 1;
+}
+
+.duration {
+    font-size: 14px;
+    color: #ccc;
+    flex: 0;
+    margin-left: auto; /* This will push the duration column to the right edge */
+}

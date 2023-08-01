@@ -1,0 +1,19 @@
+.login-container {
+    flex-direction: column;
+    background-color: #1db954;
+    gap: 5rem;
+}
+
+.login-container img {
+    height: 20vh;
+    margin-bottom: 20px;
+}
+.login-container .btn-login {
+    padding: 1rem 5rem;
+    border-radius: 5rem;
+    background-color: black;
+    color: #49f585;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}

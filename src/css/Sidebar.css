@@ -1,0 +1,41 @@
+.sidebar-container {
+    background-color: #040404;
+    color: #ffffff;
+    width: 15vw; /* Set a fixed width for the sidebar */
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.top-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Center the content horizontally */
+}
+
+.logo img {
+    max-inline-size: 100%;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 0.5rem 1rem; /* Add padding to each menu item */
+}
+
+.sidebar-menu li:hover {
+    background-color: #1db954; /* Change background color on hover */
+    border-radius: 8px; /* Add rounded corners on hover */
+}

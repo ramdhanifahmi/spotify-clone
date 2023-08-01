@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.spotify-body {
+    display: flex;
+    height: 100vh;
+    color: #ffffff;
+    background: rgb(32, 87, 100) linear-gradient(transparent, rgba(0, 0, 0, 1));
+    overflow: hidden;
+}
+
+.sidebar-container {
+    width: 15vw;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.body {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+}
+
+.body-contents {
+    font-size: 18px; /* Adjust the font size as needed */
+    text-align: center; /* Align the text to the center */
+    color: #1db954;
+}
+
