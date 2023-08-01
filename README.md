@@ -35,9 +35,14 @@ npm install
 npm Start
 ```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+7. Open your web browser and visit http://localhost:3000 to access the application.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+- Login with Spotify: Click the "Connect Spotify" button to initiate the Spotify Implicit Grant Flow authentication. After successful login, the application will retrieve an access token.
+- Search for Songs: Enter the name of a song in the search bar and click the search icon. The application will fetch and display the search results.
+- Display Search Results: The search results will be displayed in a table, showing the title, artist, and image of each song.
+
+
+### Acknowledgments
+Special thanks to Spotify for providing the API and documentation for developers to build awesome applications like this Spotify clone.
